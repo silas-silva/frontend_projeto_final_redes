@@ -3,10 +3,17 @@ const formZip = document.getElementById('uploadForm');
 formZip.addEventListener('submit', (event) => {
     event.preventDefault();
     const fileInput = document.querySelector('input[name="zipFile"]');
-    const file = fileInput.files[0]; // Pegar o arquivo zip
+    const anoInput = document.querySelector('input[name="ano"]');
+    const tipoInput = document.querySelector('input[name="tipo"]');
     
+    const file = fileInput.files[0]; // Pegar o arquivo zip
+    ano = anoInput.value;
+    tipo = tipoInput.value;
+
     const formData = new FormData();
     formData.append('zipFile', file);
+    formData.append('ano', ano);
+    formData.append('tipo', tipo);
 
     rota = 'http://localhost:3000/upload'
 

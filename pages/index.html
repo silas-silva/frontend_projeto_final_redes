@@ -4,20 +4,31 @@
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Enviar Arquivo Zip</title>
+        <title>Cadastrar Arquivos</title>
+        <link rel="stylesheet" href="../styles/styleGlobal.css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
         <link rel="stylesheet" href="../styles/styleIndex.css">
     </head>
     <body>
-        <h1>Enviar Arquivo Zip</h1>
-        <br>
-        <a href="login.html">Login</a>
-        <br>
-        <a href="busca.html">Busca</a>
-        <br>
-        <form id="uploadForm" enctype="multipart/form-data">
-            <input type="file" name="zipFile" required>
-            <button type="submit">Enviar</button>
-        </form>
+        <div class="container"> 
+            <div> 
+                <h1>Cadastrar Arquivos</h1>
+                <div>
+                    <a href="login.html">Login</a>
+                    <a href="busca.html">Busca</a>
+                </div>
+            </div>
+            <form id="uploadForm" enctype="multipart/form-data">
+                <label for="">Ano da Resolução</label>
+                <input type="text" placeholder="0000" name="ano" required>
+                <br>
+                <label for="">Tipo da Resolução</label>
+                <input type="text" placeholder="Consep e Consu"  name="tipo" required>
+                <br>
+                <input type="file" name="zipFile" required>
+                <button type="submit">Enviar</button>
+            </form>
+        </div>
         <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
         <script src="../scripts/scriptZip.js"></script>
     </body>

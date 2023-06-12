@@ -5,20 +5,47 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Busca</title>
-        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="../styles/styleGlobal.css">
+        <link rel="stylesheet" href="../styles/styleBusca.css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
     </head>
     <body>
-        <h1>Login</h1>
-        <form id="buscaForm" enctype="multipart/form-data">
-            <input type="text" placeholder="Buscar" name="busca" required>
-            <br>
-            <input type="date" name="dataInicio" required>
-            <br>
-            <input type="date" name="dataFim" required>
-            <br>
-            <button type="submit">Enviar</button>
-        </form>
-        <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
-        <script src="../scripts/scriptLogin.js"></script>
+        <div class="container"> 
+            <h1>Buscar</h1>
+            <form id="buscaForm" enctype="multipart/form-data">
+                <label for="">Buscar</label>
+                <input type="text" placeholder="Buscar" name="busca" required>
+                <label for="">Data Inicial</label>
+                <input type="date" name="dataInicio" required>
+                <label for="">Data Final</label>
+                <input type="date" name="dataFim" required>
+                <button type="submit">Buscar</button>
+                <button class="cadastro"><a href="index.html">Cadastro</a></button>
+            </form>
+            <div class="tabela">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Ano</th>
+                            <th>Orgão</th>
+                            <th>Descrição</th>
+                            <th>Número</th>
+                            <th>Link</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>1</td>
+                            <td>2</td>
+                            <td>1</td>
+                            <td>2</td>
+                            <td><a href="login.html">1</a></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+            <script src="../scripts/scriptBusca.js"></script>
+        </div>
     </body>
 </html>

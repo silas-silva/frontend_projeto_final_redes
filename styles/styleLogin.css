@@ -1,37 +1,18 @@
-.container > div {
-    display: flex;
-    justify-content: space-between;
-    width: 800px;
-    margin: auto;
-    padding: 1%;
-}
-
-.container > div > div{
-    margin-top: 15px;
-    display: flex;
-    justify-content: space-between;
-    width: 150px;
-}
-
-h1{
-    color: rgb(125, 125, 125);
-}
-
-a{
-    margin-right: 0px;
-}
-
 form {
     background-color: rgb(214, 239, 244);
     width: 50%;
     margin: 0 auto;
-    margin-top: 100px;
-    height: 400px;
+    height: 300px;
     padding: 2%;
 }
 
+h1{
+    text-align: center;
+    color: rgb(125, 125, 125);
+}
+
 form input{
-    margin-bottom: 20px;
+    margin-top: 20px;
     width: 100%;
     border: none;
     border-radius: 5px;
@@ -55,4 +36,13 @@ form button{
     font-weight: bold;
     font-size: 20px;
     padding: 1%;
+}
+
+.buttons{
+    display: flex;
+    justify-content: space-between;
+}
+
+.buttons a{
+    margin-top: 7%;
 }

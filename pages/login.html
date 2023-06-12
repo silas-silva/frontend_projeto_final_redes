@@ -5,16 +5,24 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Login</title>
-        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="../styles/styleGlobal.css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+        <link rel="stylesheet" href="../styles/styleLogin.css">
     </head>
     <body>
-        <h1>Login</h1>
-        <form id="loginForm" enctype="multipart/form-data">
-            <input type="text" placeholder="Email" name="email" required>
-            <br>
-            <input type="password" placeholder="Senha" name="password" required>
-            <button type="submit">Enviar</button>
-        </form>
+        <div class="container">
+            <h1>Login</h1>
+            <form id="loginForm" enctype="multipart/form-data">
+                <input type="text" placeholder="Email" name="email" required>
+                <br>
+                <input type="password" placeholder="Senha" name="password" required>
+                <br>
+                <div class="buttons">
+                    <button type="submit">Login</button>
+                    <a href="index.html">Voltar</a>
+                </div>
+            </form>    
+        </div>
         <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
         <script src="../scripts/scriptLogin.js"></script>
     </body>
