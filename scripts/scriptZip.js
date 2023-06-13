@@ -15,7 +15,7 @@ formZip.addEventListener('submit', (event) => {
     formData.append('ano', ano);
     formData.append('tipo', tipo);
 
-    rota = 'http://localhost:3000/upload'
+    rota = 'https://backendprojetofinalredes-production.up.railway.app/upload'
 
     axios.post(rota, formData)
     .then((response) => {

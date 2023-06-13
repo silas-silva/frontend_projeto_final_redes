@@ -15,7 +15,7 @@ formZip.addEventListener('submit', (event) => {
     const dataFim = dataFimInput.value;
     dadosForm = {"palavrasChave" : busca, "dataInicio" : dataInicio, "dataFim" : dataFim}
 
-    rota = "http://localhost:3000/buscar" // Colocar rota da Busca
+    rota = "https://backendprojetofinalredes-production.up.railway.app/buscar" // Colocar rota da Busca
 
     axios.post(rota, dadosForm)
     .then((response) => {
